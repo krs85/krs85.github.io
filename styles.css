@@ -42,9 +42,9 @@ h3 {
 .brand-tagline {
     margin: 0;
 }
-.brand-title {
+/* .brand-title {
     text-transform: uppercase;
-}
+} */
 .brand-tagline {
     font-weight: 300;
     color: rgb(176, 202, 219);
@@ -56,7 +56,7 @@ h3 {
     list-style: none;
 }
 .nav-item {
-    display: inline-block;
+    display: block;
     *display: inline;
     zoom: 1;
 }

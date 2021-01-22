@@ -15,6 +15,7 @@
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
             <h1 class="brand-title">Kelly Shiptoski</h1>
+            <!-- <h2 class="brand-tagline">Creating a blog layout using Pure</h2> -->
 
             <nav class="nav">
                 <ul class="nav-list">
@@ -40,32 +41,37 @@
 
     <div class="content pure-u-1 pure-u-md-3-4">
         <div>
+            <!-- A wrapper for all the blog posts -->
             <div class="posts">
+                <!-- <h1 class="content-subhead">Pinned Post</h1> -->
 
+                <!-- A single blog post -->
                 <section class="post">
                     <header class="post-header">
-                        <h2 class="post-title">About Me</h2>
+                        <h2 class="post-title">Publications</h2>
                     </header>
 
                     <div class="post-description">
-                        <p>
-                          My name is Kelly Shiptoski, and I am a fourth year Ph.D. student in Computer Science at the University of Pennsylvania. My current research
-                          aims to provide automatic caching of computation at the process level, using deterministic parallelism and low-level systems techniques. I love
-                          systems programming, and I'm a big fan and avid user of the <a href="https://www.rust-lang.org">Rust</a> programming language. I am looking 
-                          for an internship for the summer of 2021.
+                        <p><a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3373376.3378519"><b>Reproducible Containers</b></a>, Omar S. Navarro Leija, 
+                            Kelly Shiptoski, Ryan Scott, Baojun Wang, Nicholas Renner, Ryan Newton, and Joseph Devietti. International Conference on Architectural 
+                            Support for Programming Languages and Operating Systems <i>(ASPLOS ‘20)</i> March 2020.
                         </p>
                     </div>
                 </section>
                 
                 <section class="post"> 
                     <header class="post-header">
-                        <h2 class="post-title">Research Interests</h2>
+                        <h2 class="post-title">Research Projects</h2>
                     </header>
                     <div class="post-description"> 
                         <ul>
-                            <li>Operating systems</li>
-                            <li>Parallelism and concurrency</li>
+                            <li><b>Process Cache:</b> a system for providing automatic caching of computation at the process level <i>(WIP)</i>.</li>
+                            <li><a href="https://github.com/vmware/differential-datalog"><b>Distributed Differential Datalog (D3log) - VMWare Research Group: </b></a></li> an extension of the Differential Datalog
+                            language (built on Datalog, specifically designed for incremental computation), which provides automatic distribution of 
+                            Differential Datalog computations across compute nodes.
                             <li>Determinism and reproducibility</li>
+                            <li><a><b>Reproducible Containers (DetTrace): </b>a container abstraction for Linux which guarantees both determinism 
+                            </a> </li>
                         </ul>
                     </div>
                 </section>

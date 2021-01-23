@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>Kelly</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Kelly Shiptoski</h1>
+            <!-- <h2 class="brand-tagline">Creating a blog layout using Pure</h2> -->
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="/index.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="/research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="/experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" target="_blank" href="/CV2021.pdf">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" target="_blank" href="https://www.github.com/krs85">Github</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <!-- <h1 class="content-subhead">Pinned Post</h1> -->
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Industry Research Experience</h2>
+                    </header>
+
+                    <div class="post-description">
+                        <p><b>Research Intern, VMWare Research Group</b>, Summer 2020.
+                        </p>
+                    </div>
+                </section>
+                
+                <section class="post"> 
+                    <header class="post-header">
+                        <h2 class="post-title">Teaching</h2>
+                    </header>
+                    <div class="post-description"> 
+                        <ul>
+                            <li><b>Graduate Teaching Assistant</b> for Computer Architecture (CIS 501), University of Pennsylvania, Spring 2019.</li>
+                            <li><b>Teaching Assistant and Recitation Leader</b> for Intro to Computer Science (CIS 110), University of Pennsylvania,
+                             Spring 2018.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="post"> 
+                    <header class="post-header">
+                        <h2 class="post-title">Other Experience</h2>
+                    </header>
+                    <div class="post-description"> 
+                        <ul>
+                            <li><b>Computer Science Instructor</b> for Penn GEMS (Girls in Engineering, Math, and Science) Camp, University of
+                             Pennsylvania, Spring 2018.</li>
+                            <li><b>Software Engineering Intern</b> for Thomson Reuters, Summer 2016.</li>
+                            <li><b>Software Engineering Intern</b> for Bentley Systems, Inc., Summer 2015.</li>
+                            <li><b>Software Engineering Intern</b> for Independence Blue Cross, Summer 2014.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

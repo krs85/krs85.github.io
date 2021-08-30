@@ -1,93 +1,129 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
     <title>Kelly</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css">
     <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
 
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-        <div class="header">
-            <h1 class="brand-title">Kelly Shiptoski</h1>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <h1 class="brand-title">Kelly Shiptoski</h1>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="pure-button" href="/index.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" href="/research.html">Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" href="/experience.html">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" target="_blank" href="/CV2021.pdf">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" target="_blank" href="https://www.github.com/krs85">Github</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" target="_blank" href="/CV2021.pdf">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" target="_blank" href="https://www.github.com/krs85">Github</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
 
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
-            <div class="posts">
+        <div class="content pure-u-1 pure-u-md-3-4">
+            <div>
+                <div class="posts">
 
-                <section class="post">
-                    <header class="post-header">
-                        <h2 class="post-title">About Me</h2>
-                    </header>
+                    <section class="post">
+                        <header class="post-header">
+                            <h2 class="post-title">About Me</h2>
+                        </header>
 
-                    <div class="post-description">
-                        <p>
-                          My name is Kelly Shiptoski, and I am a fourth year Ph.D. student in Computer Science at the University of Pennsylvania. My current research
-                          aims to provide automatic caching of computation at the process level, using deterministic parallelism and low-level systems techniques. I love
-                          systems programming, and I'm a big fan and avid user of the <a href="https://www.rust-lang.org">Rust</a> programming language. I am looking 
-                          for an internship for the summer of 2021.
-                        </p>
-                    </div>
-                </section>
-                
-                <section class="post"> 
-                    <header class="post-header">
-                        <h2 class="post-title">Research Interests</h2>
-                    </header>
-                    <div class="post-description"> 
-                        <ul>
-                            <li>Operating systems</li>
-                            <li>Parallelism and concurrency</li>
-                            <li>Determinism and reproducibility</li>
-                            <li>Distributed systems</li>
-                            <li>System design and development</li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <section class="post"> 
-                    <header class="post-header">
-                        <h2 class="post-title">Skills</h2>
-                    </header>
-                    <div class="post-description">
-                        <ul>
-                            <li><b>Languages:</b> Rust, C++, C, Java, Python</li>
-                            <li><b>Linux Systems Programming</b></li>
-                        </ul>
-                    </div>
-                </section>
+                        <div class="post-description">
+                            <p>
+                                My name is <b>Kelly Shiptoski</b>, and I am a fifth year Ph.D. student in Computer
+                                Science at the University of Pennsylvania.
+                                My advisor is <a target="_blank" href="https://www.cis.upenn.edu/%7Edevietti/"><b>Dr.
+                                        Joseph Devietti</b></a>.
 
+                                <b>I am looking for a research internship position for the summer of 2022.</b> I plan to
+                                graduate in the spring of
+                                2023. After graduation, I plan to transition to industry research.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="post">
+                        <header class="post-header">
+                            <h2 class="post-title">Research Interests</h2>
+                        </header>
+                        <div class="post-description">
+                            <p>
+                                I love systems programming. I am very familiar with the <a target="_blank"
+                                    href="https://man7.org/tlpi/"><b>Linux programming interface and system call
+                                        API</b></a>. Also, I am a
+                                big fan and avid user of the <a target="_blank" href="https://www.rust-lang.org/"><b>
+                                        Rust programming language</b></a>.
+                            </p>
+
+                            <p>
+                                My doctoral research uses <b>low-level systems techniques</b> and
+                                <b>deterministic parallelism</b> to
+                                provide systems and solutions
+                                for various software engineering problems. For example, we created
+
+                                <a target="_blank" href="https://dl.acm.org/doi/10.1145/3373376.3378519"><b>Reproducible
+                                        Containers (DetTrace)</b></a>, a container abstraction for
+                                Linux which guarantees both determinism and reproducibility for any unmodified Linux
+                                program run through it. This means instead of flaky builds, we can have automatic
+                                <a target="_blank" href="https://reproducible-builds.org/"><b>reproducible builds</b></a>. The open source code can be found <a target="_blank"
+                                    href="https://github.com/dettrace/dettrace"><b>here</b></a>.
+                            </p>
+
+                            <p>
+                                My current research uses low-level systems techniques like <b>system call
+                                    interception and modification</b> and language level techniques like <b>asynchronous
+                                    Rust futures</b> to
+                                provide automatic caching of computation at
+                                the process level through a system we call <b>Process Cache</b>.
+                            </p>
+
+                            <p>
+                                During the summer of 2020, I interned with the <b><a target="_blank"
+                                        href="https://research.vmware.com/"></a>VMWare Research Group</b>.
+                                I worked somewhat outside my normal realm, but still with the Rust programming language,
+                                on <a target="_blank" href="https://github.com/vmware/differential-datalog">
+                                    <b>Distributed Differential Datalog (D3log)</b></a>. D3log is an extension
+                                of the Differential Datalog language (built on Datalog, which was specifically designed
+                                for incremental
+                                computation), which provides automatic distribution of
+                                Differential Datalog computations across compute nodes.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="post">
+                        <header class="post-header">
+                            <h2 class="post-title">Publications</h2>
+                        </header>
+
+                        <div class="post-description">
+                            <p><a target="_blank" href=""><b>Reproducible
+                                        Containers</b></a>, Omar S. Navarro Leija,
+                                Kelly Shiptoski, Ryan Scott, Baojun Wang, Nicholas Renner, Ryan Newton, and Joseph
+                                Devietti. International Conference on Architectural
+                                Support for Programming Languages and Operating Systems <i>(ASPLOS ‘20)</i> March 2020.
+                            </p>
+                        </div>
+                    </section>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 </body>
+
 </html>

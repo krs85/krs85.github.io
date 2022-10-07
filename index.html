@@ -43,13 +43,27 @@
 
                         <div class="post-description">
                             <p>
-                                My name is <b>Kelly Shiptoski</b>, and I am a fifth year Ph.D. student in Computer
+                                My name is <b>Kelly Shiptoski</b>, and I am a Ph.D. candidate in Computer
                                 Science at the University of Pennsylvania.
                                 My advisor is <a target="_blank" href="https://www.cis.upenn.edu/%7Edevietti/"><b>Dr.
                                         Joseph Devietti</b></a>.
 
-                                <b>I am looking for a research internship position for the summer of 2022.</b> I plan to
-                                graduate in 2023. After graduation, I plan to transition to industry research.
+                                I am a systems programmer with knowledge in and experience with systems development,
+                                the Linux programming interface, and the programming languages Rust, C++, and C.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="post">
+                        <header class="post-header">
+                            <h2 class="post-title">Looking for a Job!</h2>
+                        </header>
+
+                        <div class="post-description">
+                            <p>
+                                <b>I am finishing my dissertation now and am currently looking for a full-time software
+                                    engineering position.</b>
+                                Please find my CV <a target="_blank" href="/shiptoskiCV.pdf"><b>here</b></a>.
                             </p>
                         </div>
                     </section>
@@ -63,42 +77,51 @@
                                 I love systems programming. I am very familiar with the <a target="_blank"
                                     href="https://man7.org/tlpi/"><b>Linux programming interface and system call
                                         API</b></a>. Also, I am a
-                                big fan and avid user of the <a target="_blank" href="https://www.rust-lang.org/"><b>
-                                        Rust programming language</b></a>.
+                                huge fan and avid user of the <a target="_blank" href="https://www.rust-lang.org/"><b>
+                                        Rust programming language</b></a>, and I also have experience programming with
+                                C/C++.
                             </p>
 
                             <p>
-                                My doctoral research uses <b>low-level systems techniques</b> and
-                                <b>deterministic parallelism</b> to
-                                provide systems and solutions
-                                for various software engineering problems. For example, we created
+                                My doctoral research uses <b>low-level systems techniques</b> such as system call interception
+                                and manipulation to provide <b>reproducibility</b> and <b>performance optimizations</b> for unmodified
+                                Linux programs. My goal is to make systems that improve existing code by providing
+                                safety guarantees and/or performance improvements without extra effort on the part of the
+                                programmer.
+                            </p>
+                        </div>
+                    </section>
 
+                    <section class="post">
+                        <header class ="post-header">
+                            <h2 class="post-title">Projects</h2>
+                        </header>
+
+                        <div class="post-description">
+                            <p>We created
                                 <a target="_blank" href="https://dl.acm.org/doi/10.1145/3373376.3378519"><b>Reproducible
                                         Containers (DetTrace)</b></a>, a container abstraction for
                                 Linux which guarantees both determinism and reproducibility for any unmodified Linux
                                 program run through it. This means instead of flaky builds, we can have automatic
-                                <a target="_blank" href="https://reproducible-builds.org/"><b>reproducible builds</b></a>. The open source code can be found <a target="_blank"
-                                    href="https://github.com/dettrace/dettrace"><b>here</b></a>.
+                                <a target="_blank" href="https://reproducible-builds.org/"><b>reproducible
+                                        builds</b></a>. The open source code can be found <a target="_blank"
+                                    href="https://github.com/dettrace/dettrace"><b>here</b></a>. My main contribution to
+                                the project was extending the container's sequential scheduler to run in parallel in
+                                system-call-free regions of code, bringing the overhead down to just 2% for some of our benchmarks.
                             </p>
 
                             <p>
-                                My current research uses low-level systems techniques like <b>system call
-                                    interception and modification</b> and language level techniques like <b>asynchronous
-                                    Rust futures</b> to
-                                provide automatic caching of computation at
-                                the process level through a system we call <b>Process Cache</b>.
+                                My current research combines low-level systems methods with language level techniques like <b>asynchronous Rust futures</b> to
+                                provide automatic caching of arbitrary, unmodified Linux programs at the process level through a system we call <b>Process Cache</b>.
                             </p>
 
                             <p>
-                                During the summer of 2020, I interned with the <b><a target="_blank"
-                                        href="https://research.vmware.com/"></a>VMWare Research Group</b>.
+                                During the summer of 2020, I interned with the <a target="_blank" href="https://research.vmware.com/"><b>VMware Research Group</b></a>.
                                 I worked somewhat outside my normal realm, but still with the Rust programming language,
-                                on <a target="_blank" href="https://github.com/vmware/differential-datalog">
-                                    <b>Distributed Differential Datalog (D3log)</b></a>. D3log is an extension
-                                of the Differential Datalog language (built on Datalog, which was specifically designed
-                                for incremental
-                                computation), which provides automatic distribution of
-                                Differential Datalog computations across compute nodes.
+                                on <a target="_blank" href="https://github.com/vmware/differential-datalog"><b>Distributed Differential Datalog 
+                                    (D3log)</b></a>. D3log is a typed Datalog Rust engine built upon a <a target="_blank" href="https://github.com/TimelyDataflow/timely-dataflow"><b>timely dataflow</b></a> computation model extended to work across machines. Specifically, I adapted the distributed API to allow for incremental, 
+                                    on-the-fly reconfiguration of the nodes within the network, improving fault tolerance.
+
                             </p>
                         </div>
                     </section>
@@ -111,7 +134,7 @@
                         <div class="post-description">
                             <p><a target="_blank" href="/dettrace.pdf"><b>Reproducible
                                         Containers</b></a>, Omar S. Navarro Leija,
-                                Kelly Shiptoski, Ryan Scott, Baojun Wang, Nicholas Renner, Ryan Newton, and Joseph
+                                <b>Kelly Shiptoski</b>, Ryan Scott, Baojun Wang, Nicholas Renner, Ryan Newton, and Joseph
                                 Devietti. International Conference on Architectural
                                 Support for Programming Languages and Operating Systems <i>(ASPLOS ‘20)</i> March 2020.
                             </p>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>Kelly</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <img id="kelly" src="me_cropped.jpg" alt="Kelly">
+                <h1 class="brand-title">Kelly Shiptoski</h1>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="index.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" target="_blank" href="/newCV.pdf">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" target="_blank" href="https://www.github.com/krs85">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="projects.html">Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+            <div>
+                <div class="posts">
+                    <section class="post">
+                        <header class ="post-header">
+                            <h2 class="post-title">Projects</h2>
+                        </header>
+
+                        <div class="post-description">
+                            <p>We created
+                                <a target="_blank" href="https://dl.acm.org/doi/10.1145/3373376.3378519"><b>Reproducible
+                                        Containers (DetTrace)</b></a>, a container abstraction for
+                                Linux which guarantees both determinism and reproducibility for any unmodified Linux
+                                program run through it. This means instead of flaky builds, we can have automatic
+                                <a target="_blank" href="https://reproducible-builds.org/"><b>reproducible
+                                        builds</b></a>. The open source code can be found <a target="_blank"
+                                    href="https://github.com/dettrace/dettrace"><b>here</b></a>. My main contribution to
+                                the project was extending the container's sequential scheduler to run in parallel in
+                                system-call-free regions of code, bringing the overhead down to just 2% for some of our benchmarks.
+                            </p>
+
+                            <p>
+                                My current research combines low-level systems methods with language level techniques like <b>asynchronous Rust futures</b> to
+                                provide automatic caching of arbitrary, unmodified Linux programs at the process level through a system we call <b>Process Cache</b>.
+                            </p>
+
+                            <p>
+                                During the summer of 2020, I interned with the <a target="_blank" href="https://research.vmware.com/"><b>VMware Research Group</b></a>.
+                                I worked somewhat outside my normal realm, but still with the Rust programming language,
+                                on <a target="_blank" href="https://github.com/vmware/differential-datalog"><b>Distributed Differential Datalog 
+                                    (D3log)</b></a>. D3log is a typed Datalog Rust engine built upon a <a target="_blank" href="https://github.com/TimelyDataflow/timely-dataflow"><b>timely dataflow</b></a> computation model extended to work across machines. Specifically, I adapted the distributed API to allow for incremental, 
+                                    on-the-fly reconfiguration of the nodes within the network, improving fault tolerance.
+
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="post">
+                        <header class="post-header">
+                            <h2 class="post-title">Publications</h2>
+                        </header>
+
+                        <div class="post-description">
+                            <p><a target="_blank" href="/dettrace.pdf"><b>Reproducible
+                                        Containers</b></a>, Omar S. Navarro Leija,
+                                <b>Kelly Shiptoski</b>, Ryan Scott, Baojun Wang, Nicholas Renner, Ryan Newton, and Joseph
+                                Devietti. International Conference on Architectural
+                                Support for Programming Languages and Operating Systems <i>(ASPLOS ‘20)</i> March 2020.
+                            </p>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 )
 
@@ -9,5 +10,8 @@ func main() {
 
 	mux.Handle("/", http.FileServer(http.Dir(".")))
 
-	http.ListenAndServe(":4000", mux)
+	err := http.ListenAndServe(":4000", mux)
+	if err != nil {
+		log.Fatalf("Failed to listen:  %s", err)
+	}
 }

@@ -48,39 +48,54 @@
                         </header>
 
                         <div class="post-description">
-                            <p>We created
-                                <a target="_blank" href="https://dl.acm.org/doi/10.1145/3373376.3378519"><b>Reproducible
-                                        Containers (DetTrace)</b></a>, a container abstraction for
-                                Linux which guarantees both determinism and reproducibility for any unmodified Linux
-                                program run through it. This means instead of flaky builds, we can have automatic
-                                <a target="_blank" href="https://reproducible-builds.org/"><b>reproducible
-                                        builds</b></a>. The open source code can be found <a target="_blank"
-                                    href="https://github.com/dettrace/dettrace"><b>here</b></a>. My main contribution to
-                                the project was extending the container's sequential scheduler to run in parallel in
-                                system-call-free regions of code, bringing the overhead down to just 2% for some of our
-                                benchmarks.
+                            <p>
+                                The <b>ProcessCache</b> system provides a generic facility for automatically memoizing
+                                the work
+                                of a broad class of multi-process Linux programs. ProcessCache caches results and
+                                transparently determines when cached results can be used and when re-execution is
+                                necessary. ProcessCache generalizes previous work on forward build systems, to go beyond
+                                software builds to other multi-process programs like shell scripts and bioinformatics
+                                workflows. ProcessCache supports unmodified Linux binaries, using the ptrace mechanism
+                                to trace system calls and determine program inputs. The system utilizes a custom
+                                asynchronous runtime (developed in Rust) to obviate latent ptrace overhead. Our
+                                experiments show that ProcessCache can automatically provide incremental computation to
+                                existing programs, accelerating workloads from 1.06x to 65x.
+                                The open-source code for the project can be found <a target="_blank"
+                                    href="https://github.com/upenn-acg/ProcessCache"><b>here</b></a>.
                             </p>
 
                             <p>
-                                My current research combines low-level systems methods with language level techniques
-                                like <b>asynchronous Rust futures</b> to
-                                provide automatic caching of arbitrary, unmodified Linux programs at the process level
-                                through a system we call <b>Process Cache</b>.
+                                <b>DetTrace</b> is a reproducible container abstraction for Linux implemented entirely
+                                in
+                                userspace. All computation that occurs inside a DetTrace container is a pure function of
+                                the initial file system state of the container. Reproducible containers can be used for
+                                a variety of purposes, including replication for fault-tolerance, reproducible software
+                                builds, and reproducible data analytics. We use DetTrace to achieve, in an automatic
+                                fashion, reproducibility for 12,130 Debian package builds, containing over 800 million
+                                lines of code, as well as bioinformatics and machine learning workflows. We show that,
+                                while software in each of these domains is initially irreproducible, DetTrace brings
+                                reproducibility without requiring any hardware, OS, or application changes. My largest
+                                contribution to the system was extending the container's sequential scheduler to run in
+                                parallel in system-call-free regions of code while still maintaining a deterministic
+                                scheduling, bringing the overhead down to just 2% for
+                                some of our compute-bound benchmarks. The open-source code can be found <a
+                                    target="_blank" href="https://github.com/dettrace/dettrace"><b>here</b></a>, and our
+                                ASPLOS paper can be found <a target="_blank" href="/dettrace.pdf"><b>here</b></a>.
                             </p>
 
                             <p>
                                 During the summer of 2020, I interned with the <a target="_blank"
                                     href="https://research.vmware.com/"><b>VMware Research Group</b></a>.
                                 I worked somewhat outside my normal realm, but still with the Rust programming language,
-                                on <a target="_blank"
-                                    href="https://github.com/vmware/differential-datalog"><b>Distributed Differential
-                                        Datalog
-                                        (D3log)</b></a>. D3log is a typed Datalog Rust engine built upon a <a
-                                    target="_blank" href="https://github.com/TimelyDataflow/timely-dataflow"><b>timely
+                                on Distributed Differential
+                                Datalog
+                                (D3log). D3log is a typed Datalog Rust engine built upon a <a target="_blank"
+                                    href="https://github.com/TimelyDataflow/timely-dataflow"><b>timely
                                         dataflow</b></a> computation model extended to work across machines.
-                                Specifically, I adapted the distributed API to allow for incremental,
-                                on-the-fly reconfiguration of the nodes within the network, improving fault tolerance.
-
+                                My largest contribution was adapting the distributed API to allow for incremental,
+                                on-the-fly reconfiguration of the nodes within the network, improving fault-tolerance.
+                                The open-source code can be found <a target="_blank"
+                                    href="https://github.com/vmware/differential-datalog"><b>here</b></a>.
                             </p>
                         </div>
                     </section>
@@ -91,7 +106,7 @@
                         </header>
 
                         <div class="post-description">
-                            <p><a target="_blank" href="/dettrace.pdf"><b>Reproducible
+                            <p><a target="_blank" href="https://dl.acm.org/doi/10.1145/3373376.3378519"><b>Reproducible
                                         Containers</b></a>, Omar S. Navarro Leija,
                                 <b>Kelly Shiptoski</b>, Ryan Scott, Baojun Wang, Nicholas Renner, Ryan Newton, and
                                 Joseph
